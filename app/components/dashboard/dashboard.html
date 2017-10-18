@@ -85,7 +85,7 @@
 </div>
 
 <div class="row">
-  <div class="col-xs-12 col-md-6" ng-if="applicationState.endpoint.mode.provider === 'DOCKER_SWARM_MODE'">
+  <div class="col-xs-12 col-md-6" ng-if="applicationState.endpoint.mode.provider === 'DOCKER_SWARM_MODE' && applicationState.endpoint.mode.role === 'MANAGER'">
     <a ui-sref="stacks">
       <rd-widget>
         <rd-widget-body>
